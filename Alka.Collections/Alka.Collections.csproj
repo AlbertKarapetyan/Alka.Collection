@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Projects</BaseOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Albert Karapetyan (albert.karapetyan@gmail.com)</Authors>
+    <Company>$(Authors) </Company>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="AddedEventArgs.cs" />
+    <Compile Include="Interfaces\IAlkaCollection.cs" />
+    <Compile Include="Models\IPerson.cs" />
+    <Compile Include="PersonCollection.cs" />
+    <Compile Include="RemovedEventArgs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
